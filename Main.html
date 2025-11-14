@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackToOwner</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-[#1a1a1d]">
+    <!-- Navbar Start... -->
+    <nav class="h-auto w-full m-3 p-3 flex justify-between items-center">
+        <div class="flex justify-center items-center m-2 p-2">
+            <img class="w-[80px] h=[80x] rounded-full object-cover md:w-[100px] h=[100x]"
+                src="./image/backtoownerlogo.png" alt="">
+            <p class="text-white font-poppins text-xl font-bold m-2 p-2 md:text-3xl ">BackToOwner</p>
+        </div>
+        <ul class="md:flex hidden font-semibold gap-2">
+            <li class="mx-[14px] text-white font-poppins cursor-pointer text-[19px]">Home</li>
+            <li class="mx-[14px] text-white font-poppins cursor-pointer text-[19px]">Browse Items</li>
+            <li class="mx-[14px] text-white font-poppins cursor-pointer text-[19px]">About us</li>
+        </ul>
+        <div class=" hidden md:flex  items-center gap-2">
+            <a class="mx-[14px] text-white text-[19px] font-poppins cursor-pointer font-semibold m-2 p-2 hover:border border-white rounded-md e-28 block"
+                href="#">Sign in</a>
+            <a class="mx-[14px] text-[19px] text-white font-poppins cursor-pointer font-semibold m-2 p-2 hover:border border-white rounded-md w-25 block "
+                href="#">Sign up</a>
+        </div>
+        <div class="text-3xl md:hidden">
+            <a class="text-white" href="#">&#9776</a>
+        </div>
+
+    </nav>
+    <!-- Navbar Ends Here -->
+
+    <!-- Main Section to put lost item -->
+    <header class="h-auto w-100 flex flex-wrap text-center items-center">
+        <div>
+            <form class="flex w-full h-auto flex-wap text-center items-center p-4 m-4" action="#">
+                <input
+                    class="w-[700px] h-9 m-4 p-4 bg-transparent rounded-md text-white placeholder:text-gray-400 border border-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 ease-in-out"
+                    type="search" placeholder="Search by keywords..." name="search" id="cat-search">
+
+                <div class="flex items-center m-4 space-x-2">
+                    <!-- <label for="sort-opt" class="text-white text-xl font-medium">Filters :</label> -->
+                    <select name="sort" id="sort-opt"
+                        class="h-9 px-4 rounded-md bg-black bg-opacity-50 text-white border border-white focus:outline-none focus:ring-2 focus:ring-white">
+                        <option value="relevance">Relevance</option>
+                        <option value="latest">Sort by Latest</option>
+                        <option value="oldest">Sort by Oldest</option>
+                    </select>
+                </div>
+
+
+            </form>
+        </div>
+
+    </header>
+
+</body>
+
+</html>
