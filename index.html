@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackToOwner</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="bg-[#1a1a1d] scroll-smooth">
+    <!-- Navbar Start... -->
+    <nav class="h-auto w-full m-3 p-3 flex justify-between items-center">
+        <div class="flex justify-center items-center m-2 p-2">
+            <img class="w-[80px] h=[80x] rounded-full object-cover md:w-[100px] h=[100x]"
+                src="./image/backtoownerlogo.png" alt="">
+            <p class="text-white font-poppins text-xl font-bold m-2 p-2 md:text-3xl ">BackToOwner</p>
+        </div>
+        <ul class="md:flex hidden font-semibold gap-2">
+            <li
+                class="mx-[14px] text-white font-poppins cursor-pointer text-[19px] hover:underline underline-offset-4">
+                Home</li>
+            <li
+                class="mx-[14px] text-white font-poppins cursor-pointer text-[19px] hover:underline underline-offset-4">
+                Browse Items</li>
+            <li
+                class="mx-[14px] text-white font-poppins cursor-pointer text-[19px] hover:underline underline-offset-4">
+                About us</li>
+        </ul>
+        <div class=" hidden md:flex  items-center gap-2">
+            <a class="mx-[14px] text-white text-[19px] font-poppins cursor-pointer font-semibold m-2 p-2 hover:border border-white rounded-md e-28 block md:w-auto"
+                href="#">Sign in</a>
+            <a class="mx-[14px] text-[19px] text-white font-poppins cursor-pointer font-semibold m-2 p-2 hover:border border-white rounded-md w-25 block md:w-auto "
+                href="#">Sign up</a>
+        </div>
+        <div class="text-3xl md:hidden">
+            <a class="text-white" href="#">&#9776</a>
+        </div>
+
+    </nav>
+    <!-- Navbar Ends Here -->
+
+    <!-- Main Section to put lost item -->
+    <header class="flex flex-col h-auto w-100 md:flex md:flex-wrap  text-center items-center">
+        <div
+            class=" w-full  bg-[#0f0a1e] h-auto p-2 m-3 rounded-3xl flex justify-center items-center flex-col flex-wrap md:w-[700px] md:flex  border border-white backdrop-blur-sm ">
+            <div>
+                <p class="p-2 m-2 text-white  text-xl font-brandScript md:px-2 md:m-4 md:text-3xl">Find your lost
+                    things !!</p>
+            </div>
+            <div>
+                <form class="flex flex-col w-full h-auto flex-wrap  items-center p-4 m-4 md:flex  md:flex-row"
+                    action="#">
+                    <input
+                        class="w-full h-7 m-2 p-2 md:w-[350px] md:h-10 bg-transparent rounded-md text-white placeholder:text-gray-400 border border-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 ease-in-out"
+                        type="search" placeholder="Search by keywords..." name="search" id="cat-search">
+                </form>
+            </div>
+            <div class="w-full h-auto m-4 p-2 flex flex-wrap justify-center items-center ">
+                <select name="category" id="cate"
+                    class="w-full max-w-[110px] h-9 m-2 p-2 md:max-w-[180px] md:h-10 md:p-2 md:m-3 rounded-md text-white bg-black text-base bg-opacity-50 border border-white focus:outline-none focus:ring-2 focus:ring-white ">
+                    <option class="bg-black text-white" value="Select Category">Select Cateogory</option>
+                    <option class="bg-black text-white" value="Electronic devices">Electronic devices</option>
+                    <option class="bg-black text-white" value="Bags">Bagpack</option>
+                    <option class="bg-black text-white" value="Document">Document</option>
+                    <option class="bg-black text-white" value="keys">Keys</option>
+                    <option class="bg-black text-white" value="Bottels/Tiffins">Bottels/Tiffens</option>
+                    <option class="bg-black text-white" value="Identity Card">Identity Card</option>
+                    <option class="bg-black text-white" value="Cloths/Garments">Cloths/Garments</option>
+                    <option class="bg-black text-white" value="Staff Items">Staff items</option>
+                </select>
+
+                <input type="date" name="date" id="date_find"
+                    class="w-full max-w-[110px] h-9 m-2 p-2 md:max-w-[180px] md:h-10 md:p-2 md:m-3 rounded-md text-black  bg-gray-500 text-base bg-opacity-50 border border-white focus:outline-none focus:ring-2 focus:ring-white">
+
+                <select name="location" id="location"
+                    class="w-full max-w-[110px] h-9 m-2 p-2 md:max-w-[180px] md:h-10 md:p-2 md:m-3 rounded-md text-white bg-black text-base bg-opacity-50 border border-white focus:outline-none focus:ring-2 focus:ring-white">
+                    <option class="bg-black text-white" value="Select location">Select location</option>
+                    <option class="bg-black text-white" value="Four Square">Four Square</option>
+                    <option class="bg-black text-white" value="Basketball Court">Basketball Court</option>
+                    <option class="bg-black text-white" value="Parking">Parking</option>
+                    <option class="bg-black text-white" value="Front Gate">Front Gate</option>
+                    <option class="bg-black text-white" value="Main Ground">Main Ground</option>
+                    <option class="bg-black text-white" value="C-Building">C-Building</option>
+                    <option class="bg-black text-white" value="B-Building">B-Building</option>
+                    <option class="bg-black text-white" value="A-Building">A-Building</option>
+                </select>
+
+                <button type="submit"
+                    class="flex items-center gap-1 px-3 py-2 m-2 rounded-md bg-white text-black text-sm md:text-base font-medium border border-black hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-black transition">
+                    <svg class="w-4 h-4 md:w-5 md:h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                            d="M12.9 14.32a8 8 0 111.414-1.414l4.387 4.387a1 1 0 01-1.414 1.414l-4.387-4.387zM8 14a6 6 0 100-12 6 6 0 000 12z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <span class="hidden sm:inline">Search</span>
+                </button>
+
+            </div>
+
+    </header>
+
+
+
+    <section class="w-full h-auto flex flex-wrap flex-col md:flex md:flex-row">
+        <div
+            class=" w-full h-auto flex flex-col justify-center items-center text-center flex-wrap gap-2 mx-4 p-2 md:flex md:flex-row md:p-2 md:m-2 ">
+            <button
+                class="w-auto h-auto m-4 p-1 text-base text-center bg-white text-black rounded-lg font-semibold  hover:border border-white hover:bg-black hover:text-white md:p-2 md:m-4 md:w-[200px] md:h-11 md:text-xl">Post
+                Items</button>
+            <button
+                class="w-auto h-auto m-4 p-1 text-base text-center bg-white text-black rounded-lg font-semibold  hover:border border-white hover:bg-black hover:text-white md:p-2 md:m-4 md:w-[200px] md:h-11 md:text-xl">Find
+                Items</button>
+        </div>
+    </section>
+
+    <main class="w-full h-auto flex flex-wrap flex-col md:flex md:flex-row">
+        <div
+            class="w-full h-auto flex text-xl justify-start items-center mx-4 px-3 py-3 text-white font-poppins font-semibold md:text-3xl ">
+            <p>Latest found items.</p>
+        </div>
+        <!-- ==1== -->
+        <div class="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-4">
+            <div
+                class="w-full h-30 p-2 mx-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white md:flex md:flex-col md:w-[350px] md:h-50  object-cover">
+                <img src="./image/card1.jpg" alt="" class="w-full h-[200px] object-cover">
+                <div class="flex flex-wrap justify-start items-center">
+                    <p class="text-base md:text-lg">Category :</p>
+                    <p class="text-base md:text-lg">Electronic Devices</p>
+                </div>
+
+                <div class="flex flex-wrap justify-between items-center gap-2">
+                    <div class="flex flex-wrap gap-1">
+                        <p>Location:</p>
+                        <p class="text-red-600 font-semibold">A-Building</p>
+
+                    </div>
+
+                    <button
+                        class="w-[100px] h-9 rounded-lg bg-green-600 border border-black m-2 md:w-[100px] md:h-9 hover:bg-transparent hover:border hover:border-white">Claim</button>
+                </div>
+            </div>
+            <!-- ==2== -->
+            <div
+                class="w-full h-30 p-2 mx-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white md:flex md:flex-col md:w-[350px] md:h-50  object-cover">
+                <img src="./image/card2.jpg" alt="" class="w-full h-[200px] object-cover">
+                <div class="flex flex-wrap justify-start items-center">
+                    <p class="text-base md:text-lg">Category :</p>
+                    <p class="text-base md:text-lg">BagPack</p>
+                </div>
+
+                <div class="flex flex-wrap justify-between items-center gap-2">
+                    <div class="flex flex-wrap gap-1">
+                        <p>Location:</p>
+                        <p class="text-red-600 font-semibold">C-Building</p>
+
+                    </div>
+
+                    <button
+                        class="w-[100px] h-9 rounded-lg bg-green-600 border border-black m-2 md:w-[100px] md:h-9 hover:bg-transparent hover:border hover:border-white">Claim</button>
+                </div>
+            </div>
+            <!-- ==3== -->
+            <div
+                class="w-full h-30 p-2 mx-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white md:flex md:flex-col md:w-[350px] md:h-50  object-cover">
+                <img src="./image/card3.jpg" alt="" class="w-full h-[200px] object-cover">
+                <div class="flex flex-wrap justify-start items-center">
+                    <p class="text-base md:text-lg">Category :</p>
+                    <p class="text-base md:text-lg">Electronic Devices</p>
+                </div>
+
+                <div class="flex flex-wrap justify-between items-center gap-2">
+                    <div class="flex flex-wrap gap-1">
+                        <p>Location:</p>
+                        <p class="text-red-600 font-semibold">A-Building</p>
+
+                    </div>
+
+                    <button
+                        class="w-[100px] h-9 rounded-lg bg-green-600 border border-black m-2 md:w-[100px] md:h-9 hover:bg-transparent hover:border hover:border-white">Claim</button>
+                </div>
+            </div>
+            <!-- ==4== -->
+            <div
+                class="w-full h-30 p-2 mx-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white md:flex md:flex-col md:w-[350px] md:h-50  object-cover">
+                <img src="./image/card5.jpg" alt="" class="w-full h-[200px] object-cover">
+                <div class="flex flex-wrap justify-start items-center">
+                    <p class="text-base md:text-lg">Category :</p>
+                    <p class="text-base md:text-lg">Identity Card</p>
+                </div>
+
+                <div class="flex flex-wrap justify-between items-center gap-2">
+                    <div class="flex flex-wrap gap-1">
+                        <p>Location:</p>
+                        <p class="text-red-600 font-semibold">Parking</p>
+
+                    </div>
+
+                    <button
+                        class="w-[100px] h-9 rounded-lg bg-green-600 border border-black m-2 md:w-[100px] md:h-9 hover:bg-transparent hover:border hover:border-white">Claim</button>
+                </div>
+            </div>
+            <!-- ==5== -->
+            <div
+                class="w-full h-30 p-2 mx-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white md:flex md:flex-col md:w-[350px] md:h-50  object-cover">
+                <img src="./image/card4.jpg" alt="" class="w-full h-[200px] object-cover">
+                <div class="flex flex-wrap justify-start items-center">
+                    <p class="text-base md:text-lg">Category :</p>
+                    <p class="text-base md:text-lg">Keys</p>
+                </div>
+
+                <div class="flex flex-wrap justify-between items-center gap-2">
+                    <div class="flex flex-wrap gap-1">
+                        <p>Location:</p>
+                        <p class="text-red-600 font-semibold">Parking</p>
+
+                    </div>
+
+                    <button
+                        class="w-[100px] h-9 rounded-lg bg-green-600 border border-black m-2 md:w-[100px] md:h-9 hover:bg-transparent hover:border hover:border-white">Claim</button>
+                </div>
+            </div>
+            <!-- ==6== -->
+            <div
+                class="w-full h-30 p-2 mx-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white md:flex md:flex-col md:w-[350px] md:h-50  object-cover">
+                <img src="./image/card6.jpg" alt="" class="w-full h-[200px] object-cover">
+                <div class="flex flex-wrap justify-start items-center">
+                    <p class="text-base md:text-lg">Category :</p>
+                    <p class="text-base md:text-lg">garments</p>
+                </div>
+
+                <div class="flex flex-wrap justify-between items-center gap-2">
+                    <div class="flex flex-wrap gap-1">
+                        <p>Location:</p>
+                        <p class="text-red-600 font-semibold">Four Square</p>
+
+                    </div>
+
+                    <button
+                        class="w-[100px] h-9 rounded-lg bg-green-600 border border-black m-2 md:w-[100px] md:h-9 hover:bg-transparent hover:border hover:border-white">Claim</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <!-- Main Ends Here -->
+    <footer class="mt-16 border-t border-white/10 bg-black/20 backdrop-blur-md">
+        <div class="max-w-6xl mx-auto px-4 py-10 md:py-12 text-gray-300">
+            <!-- Top section -->
+            <div class="grid gap-8 md:grid-cols-4">
+                <!-- Branding -->
+                <div class="md:col-span-1 space-y-3">
+                    <div class="flex items-center gap-3">
+                        <!-- Logo -->
+                        <div> 
+                            <img class="w-[30px] h=[30x] rounded-full object-cover md:w-[50px] h=[50x]"
+                            src="./image/backtoownerlogo.png" alt="">
+
+                        </div>
+                        <div>
+                            <h2 class="text-lg font-semibold">BacktoOwner</h2>
+                            <p class="text-xs text-gray-400">
+                                Lost & found platform to reconnect people with their belongings.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product links -->
+                <div>
+                    <h3 class="text-sm font-semibold mb-3">Product</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white hover:underline underline-offset-4">Home</a></li>
+                        <li><a href="#" class="hover:text-white hover:underline underline-offset-4">Browse Items</a>
+                        </li>
+                        <li><a href="#" class="hover:text-white hover:underline underline-offset-4">Report Lost Item</a>
+                        </li>
+                        <li><a href="#" class="hover:text-white hover:underline underline-offset-4">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support links -->
+                <div>
+                    <h3 class="text-sm font-semibold mb-3">Support</h3>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white hover:underline underline-offset-4">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white hover:underline underline-offset-4">Report an Issue</a>
+                        </li>
+                        <li><a href="#" class="hover:text-white hover:underline underline-offset-4">Feedback</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact / Social -->
+                <div class="space-y-3">
+                    <h3 class="text-sm font-semibold mb-1">Stay connected</h3>
+                    <p class="text-sm text-gray-400">
+                        Have a suggestion or found a bug? Reach out anytime.
+                    </p>
+                    <p class="text-sm">
+                        Email:
+                        <a href="mailto:raundalerutik@example.com" class="text-gray-200 hover:text-white hover:underline">
+                                raundalerutik@example.com
+                        </a>
+                    </p>
+                    <div class="flex gap-4 text-sm text-gray-400">
+                        <a href="https://github.com/rutikraundale" class="hover:text-white">GitHub</a>
+                        <a href="https://www.linkedin.com/in/rutik-raundale-348136289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="hover:text-white">LinkedIn</a>
+                        <a href="#" class="hover:text-white">Instagram</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom section -->
+            <div class="mt-8 flex flex-col md:flex-row items-center justify-between gap-3 border-t border-white/5 pt-4">
+                <p class="text-xs text-gray-500">
+                    © 2025 BacktoOwner. All rights reserved.
+                </p>
+                <div class="flex gap-4 text-xs text-gray-500">
+                    <a href="#" class="hover:text-gray-300">Privacy Policy</a>
+                    <a href="#" class="hover:text-gray-300">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
