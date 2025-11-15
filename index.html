@@ -13,11 +13,11 @@
 
 </head>
 
-<body class="bg-[#1a1a1d] scroll-smooth">
+<body class="bg-[#1a1a1d]  overflow-x-hidden">
     <!-- Navbar Start... -->
     <nav class="h-auto w-full m-3 p-3 flex justify-between items-center">
         <div class="flex justify-center items-center m-2 p-2">
-            <img class="w-[80px] h=[80x] rounded-full object-cover md:w-[100px] h=[100x]"
+            <img class="w-[80px] h-[80px] rounded-full object-cover md:w-[100px] md:h-[100px]"
                 src="./image/backtoownerlogo.png" alt="">
             <p class="text-white font-poppins text-xl font-bold m-2 p-2 md:text-3xl ">BackToOwner</p>
         </div>
@@ -39,22 +39,26 @@
                 href="#">Sign up</a>
         </div>
         <div class="text-3xl md:hidden">
-            <a class="text-white" href="#">&#9776</a>
+            <a class="text-white" href="#">&#9776;</a>
         </div>
 
     </nav>
+
     <!-- Navbar Ends Here -->
 
+
+
     <!-- Main Section to put lost item -->
-    <header class="flex flex-col h-auto w-100 md:flex md:flex-wrap  text-center items-center">
+
+    <header class="w-full flex flex-col h-auto  md:flex-wrap justify-center  text-center items-center">
         <div
-            class=" w-full  bg-[#0f0a1e] h-auto p-2 m-3 rounded-3xl flex justify-center items-center flex-col flex-wrap md:w-[700px] md:flex  border border-white backdrop-blur-sm ">
+            class=" w-full  bg-[#0f0a1e] h-auto  rounded-3xl flex justify-center items-center flex-col flex-wrap md:max-w-[700px]  border border-white backdrop-blur-sm ">
             <div>
                 <p class="p-2 m-2 text-white  text-xl font-brandScript md:px-2 md:m-4 md:text-3xl">Find your lost
                     things !!</p>
             </div>
             <div>
-                <form class="flex flex-col w-full h-auto flex-wrap  items-center p-4 m-4 md:flex  md:flex-row"
+                <form class="flex flex-col w-full items-center p-4 m-4 md:flex-row md:flex-wrap"
                     action="#">
                     <input
                         class="w-full h-7 m-2 p-2 md:w-[350px] md:h-10 bg-transparent rounded-md text-white placeholder:text-gray-400 border border-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 ease-in-out"
@@ -103,6 +107,7 @@
 
             </div>
 
+        </div>
     </header>
 
 
@@ -111,24 +116,24 @@
         <div
             class=" w-full h-auto flex flex-col justify-center items-center text-center flex-wrap gap-2 mx-4 p-2 md:flex md:flex-row md:p-2 md:m-2 ">
             <button
-                class="w-auto h-auto m-4 p-1 text-base text-center bg-white text-black rounded-lg font-semibold  hover:border border-white hover:bg-black hover:text-white md:p-2 md:m-4 md:w-[200px] md:h-11 md:text-xl">Post
+                class="w-[250px] h-auto m-4 p-1 text-base text-center bg-white text-black rounded-lg font-semibold  hover:border border-white hover:bg-black hover:text-white md:p-2 md:m-4 md:w-[200px] md:h-11 md:text-xl">Post
                 Items</button>
             <button
-                class="w-auto h-auto m-4 p-1 text-base text-center bg-white text-black rounded-lg font-semibold  hover:border border-white hover:bg-black hover:text-white md:p-2 md:m-4 md:w-[200px] md:h-11 md:text-xl">Find
+                class="w-[250px] h-auto m-4 p-1 text-base text-center bg-white text-black rounded-lg font-semibold  hover:border border-white hover:bg-black hover:text-white md:p-2 md:m-4 md:w-[200px] md:h-11 md:text-xl">Find
                 Items</button>
         </div>
     </section>
 
     <main class="w-full h-auto flex flex-wrap flex-col md:flex md:flex-row">
         <div
-            class="w-full h-auto flex text-xl justify-start items-center mx-4 px-3 py-3 text-white font-poppins font-semibold md:text-3xl ">
+            class="w-full h-auto flex text-xl justify-start items-center m-4 p-2 text-white font-poppins font-semibold md:text-3xl ">
             <p>Latest found items.</p>
         </div>
         <!-- ==1== -->
-        <div class="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-4">
+        <div class="w-full h-auto grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-4 justify-items-center">
             <div
-                class="w-full h-30 p-2 mx-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white md:flex md:flex-col md:w-[350px] md:h-50  object-cover">
-                <img src="./image/card1.jpg" alt="" class="w-full h-[200px] object-cover">
+                class="w-full h-30  m-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white  md:w-[350px] md:h-50 md:m-4 object-cover">
+                <img src="./image/card1.jpg" alt="" class="w-full h-[200px] object-cover rounded-t-xl">
                 <div class="flex flex-wrap justify-start items-center">
                     <p class="text-base md:text-lg">Category :</p>
                     <p class="text-base md:text-lg">Electronic Devices</p>
@@ -147,8 +152,8 @@
             </div>
             <!-- ==2== -->
             <div
-                class="w-full h-30 p-2 mx-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white md:flex md:flex-col md:w-[350px] md:h-50  object-cover">
-                <img src="./image/card2.jpg" alt="" class="w-full h-[200px] object-cover">
+                class="w-full h-30 m-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white  md:w-[350px] md:h-50 md:m-4 object-cover">
+                <img src="./image/card2.jpg" alt="" class="w-full h-[200px] object-cover rounded-t-xl">
                 <div class="flex flex-wrap justify-start items-center">
                     <p class="text-base md:text-lg">Category :</p>
                     <p class="text-base md:text-lg">BagPack</p>
@@ -167,8 +172,8 @@
             </div>
             <!-- ==3== -->
             <div
-                class="w-full h-30 p-2 mx-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white md:flex md:flex-col md:w-[350px] md:h-50  object-cover">
-                <img src="./image/card3.jpg" alt="" class="w-full h-[200px] object-cover">
+                class="w-full h-30  m-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white  md:w-[350px] md:h-50 md:m-4  object-cover">
+                <img src="./image/card3.jpg" alt="" class="w-full h-[200px] object-cover rounded-t-xl">
                 <div class="flex flex-wrap justify-start items-center">
                     <p class="text-base md:text-lg">Category :</p>
                     <p class="text-base md:text-lg">Electronic Devices</p>
@@ -187,8 +192,8 @@
             </div>
             <!-- ==4== -->
             <div
-                class="w-full h-30 p-2 mx-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white md:flex md:flex-col md:w-[350px] md:h-50  object-cover">
-                <img src="./image/card5.jpg" alt="" class="w-full h-[200px] object-cover">
+                class="w-full h-30  m-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white  md:w-[350px] md:h-50 md:m-4 object-cover">
+                <img src="./image/card5.jpg" alt="" class="w-full h-[200px] object-cover rounded-t-xl">
                 <div class="flex flex-wrap justify-start items-center">
                     <p class="text-base md:text-lg">Category :</p>
                     <p class="text-base md:text-lg">Identity Card</p>
@@ -207,8 +212,8 @@
             </div>
             <!-- ==5== -->
             <div
-                class="w-full h-30 p-2 mx-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white md:flex md:flex-col md:w-[350px] md:h-50  object-cover">
-                <img src="./image/card4.jpg" alt="" class="w-full h-[200px] object-cover">
+                class="w-full h-30  m-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white md:w-[350px] md:h-50 md:m-4   object-cover">
+                <img src="./image/card4.jpg" alt="" class="w-full h-[200px] object-cover rounded-t-xl">
                 <div class="flex flex-wrap justify-start items-center">
                     <p class="text-base md:text-lg">Category :</p>
                     <p class="text-base md:text-lg">Keys</p>
@@ -227,8 +232,8 @@
             </div>
             <!-- ==6== -->
             <div
-                class="w-full h-30 p-2 mx-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white md:flex md:flex-col md:w-[350px] md:h-50  object-cover">
-                <img src="./image/card6.jpg" alt="" class="w-full h-[200px] object-cover">
+                class="w-full h-30  m-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white  md:w-[350px] md:h-50 md:m-4  object-cover">
+                <img src="./image/card6.jpg" alt="" class="w-full h-[200px] object-cover rounded-t-xl">
                 <div class="flex flex-wrap justify-start items-center">
                     <p class="text-base md:text-lg">Category :</p>
                     <p class="text-base md:text-lg">garments</p>
@@ -248,7 +253,9 @@
 
         </div>
     </main>
+
     <!-- Main Ends Here -->
+
     <footer class="mt-16 border-t border-white/10 bg-black/20 backdrop-blur-md">
         <div class="max-w-6xl mx-auto px-4 py-10 md:py-12 text-gray-300">
             <!-- Top section -->
@@ -258,8 +265,9 @@
                     <div class="flex items-center gap-3">
                         <!-- Logo -->
                         <div> 
-                            <img class="w-[30px] h=[30x] rounded-full object-cover md:w-[50px] h=[50x]"
-                            src="./image/backtoownerlogo.png" alt="">
+                            <img src="./image/backtoownerlogo.png"
+     alt="BacktoOwner Logo"
+     class="w-[30px] h-[30px] md:w-[55px] md:h-[55px] rounded-full object-cover border border-gray-300 shadow-sm hover:scale-105 transition-transform duration-200 ease-in-out" />
 
                         </div>
                         <div>
