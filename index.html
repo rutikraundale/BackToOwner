@@ -13,33 +13,30 @@
 
 </head>
 
-<body class="bg-[#1a1a1d]  overflow-x-hidden">
+<body className="bg-[#1a1a1d]  overflow-x-hidden">
     <!-- Navbar Start... -->
-    <nav class="h-auto w-full m-3 p-3 flex justify-between items-center">
-        <div class="flex justify-center items-center m-2 p-2">
-            <img class="w-[80px] h-[80px] rounded-full object-cover md:w-[100px] md:h-[100px]"
+    <nav className="h-auto w-full m-3 p-3 flex justify-between items-center">
+        <div className="flex justify-center items-center m-2 p-2">
+            <img className="w-[80px] h-[80px] rounded-full object-cover md:w-[100px] md:h-[100px]"
                 src="./image/backtoownerlogo.png" alt="">
-            <p class="text-white font-poppins text-xl font-bold m-2 p-2 md:text-3xl ">BackToOwner</p>
+            <p className="text-white font-poppins text-xl font-bold m-2 p-2 md:text-3xl ">BackToOwner</p>
         </div>
-        <ul class="md:flex hidden font-semibold gap-2">
-            <li
-                class="mx-[14px] text-white font-poppins cursor-pointer text-[19px] hover:underline underline-offset-4">
+        <ul className="md:flex hidden font-semibold gap-2">
+            <li className="mx-[14px] text-white font-poppins cursor-pointer text-[19px] hover:underline underline-offset-4">
                 Home</li>
-            <li
-                class="mx-[14px] text-white font-poppins cursor-pointer text-[19px] hover:underline underline-offset-4">
+            <li className="mx-[14px] text-white font-poppins cursor-pointer text-[19px] hover:underline underline-offset-4">
                 Browse Items</li>
-            <li
-                class="mx-[14px] text-white font-poppins cursor-pointer text-[19px] hover:underline underline-offset-4">
+            <li className="mx-[14px] text-white font-poppins cursor-pointer text-[19px] hover:underline underline-offset-4">
                 About us</li>
         </ul>
-        <div class=" hidden md:flex  items-center gap-2">
-            <a class="mx-[14px] text-white text-[19px] font-poppins cursor-pointer font-semibold m-2 p-2 hover:border border-white rounded-md e-28 block md:w-auto"
+        <div className=" hidden md:flex  items-center gap-2">
+            <a className="mx-[14px] text-white text-[19px] font-poppins cursor-pointer font-semibold m-2 p-2 hover:border border-white rounded-md e-28 block md:w-auto"
                 href="#">Sign in</a>
-            <a class="mx-[14px] text-[19px] text-white font-poppins cursor-pointer font-semibold m-2 p-2 hover:border border-white rounded-md w-25 block md:w-auto "
+            <a className="mx-[14px] text-[19px] text-white font-poppins cursor-pointer font-semibold m-2 p-2 hover:border border-white rounded-md w-25 block md:w-auto "
                 href="#">Sign up</a>
         </div>
-        <div class="text-3xl md:hidden">
-            <a class="text-white" href="#">&#9776;</a>
+        <div className="text-3xl md:hidden">
+            <a className="text-white" href="#">&#9776;</a>
         </div>
 
     </nav>
@@ -50,59 +47,58 @@
 
     <!-- Main Section to put lost item -->
 
-    <header class="w-full flex flex-col h-auto  md:flex-wrap justify-center  text-center items-center">
+    <header className="w-full flex flex-col h-auto  md:flex-wrap justify-center  text-center items-center">
         <div
-            class=" w-full  bg-[#0f0a1e] h-auto  rounded-3xl flex justify-center items-center flex-col flex-wrap md:w-[890px]  border border-white backdrop-blur-sm ">
+            className=" w-full  bg-[#0f0a1e] h-auto  rounded-3xl flex justify-center items-center flex-col flex-wrap md:w-[890px]  border border-white backdrop-blur-sm ">
             <div>
-                <p class="p-2 m-2 text-white  text-xl font-brandScript md:px-2 md:m-4 md:text-3xl">Find your lost
+                <p className="p-2 m-2 text-white  text-xl font-brandScript md:px-2 md:m-4 md:text-3xl">Find your lost
                     things !!</p>
             </div>
             <div>
-                <form class="flex flex-col w-full items-center p-4 m-4 md:flex-row md:flex-wrap"
-                    action="#">
+                <form className="flex flex-col w-full items-center p-4 m-4 md:flex-row md:flex-wrap" action="#">
                     <input
-                        class="w-full h-7 m-2 p-2 md:w-[350px] md:h-10 bg-transparent rounded-md text-white placeholder:text-gray-400 border border-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 ease-in-out"
+                        className="w-full h-7 m-2 p-2 md:w-[350px] md:h-10 bg-transparent rounded-md text-white placeholder:text-gray-400 border border-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 ease-in-out"
                         type="search" placeholder="Search by keywords..." name="search" id="cat-search">
                 </form>
             </div>
-            <div class="w-full h-auto m-4 p-2 flex flex-wrap justify-center items-center ">
+            <div className="w-full h-auto m-4 p-2 flex flex-wrap justify-center items-center ">
                 <select name="category" id="cate"
-                    class="w-full max-w-[110px] h-9 m-2 p-2 md:max-w-[180px] md:h-10 md:p-2 md:m-3 rounded-md text-white bg-black text-base bg-opacity-50 border border-white focus:outline-none focus:ring-2 focus:ring-white ">
-                    <option class="bg-black text-white" value="Select Category">Select Cateogory</option>
-                    <option class="bg-black text-white" value="Electronic devices">Electronic devices</option>
-                    <option class="bg-black text-white" value="Bags">Bagpack</option>
-                    <option class="bg-black text-white" value="Document">Document</option>
-                    <option class="bg-black text-white" value="keys">Keys</option>
-                    <option class="bg-black text-white" value="Bottels/Tiffins">Bottels/Tiffens</option>
-                    <option class="bg-black text-white" value="Identity Card">Identity Card</option>
-                    <option class="bg-black text-white" value="Cloths/Garments">Cloths/Garments</option>
-                    <option class="bg-black text-white" value="Staff Items">Staff items</option>
+                    className="w-full max-w-[110px] h-9 m-2 p-2 md:max-w-[180px] md:h-10 md:p-2 md:m-3 rounded-md text-white bg-black text-base bg-opacity-50 border border-white focus:outline-none focus:ring-2 focus:ring-white ">
+                    <option className="bg-black text-white" value="Select Category">Select Cateogory</option>
+                    <option className="bg-black text-white" value="Electronic devices">Electronic devices</option>
+                    <option className="bg-black text-white" value="Bags">Bagpack</option>
+                    <option className="bg-black text-white" value="Document">Document</option>
+                    <option className="bg-black text-white" value="keys">Keys</option>
+                    <option className="bg-black text-white" value="Bottels/Tiffins">Bottels/Tiffens</option>
+                    <option className="bg-black text-white" value="Identity Card">Identity Card</option>
+                    <option className="bg-black text-white" value="Cloths/Garments">Cloths/Garments</option>
+                    <option className="bg-black text-white" value="Staff Items">Staff items</option>
                 </select>
 
                 <input type="date" name="date" id="date_find"
-                    class="w-full max-w-[110px] h-9 m-2 p-2 md:max-w-[180px] md:h-10 md:p-2 md:m-3 rounded-md text-black  bg-gray-500 text-base bg-opacity-50 border border-white focus:outline-none focus:ring-2 focus:ring-white">
+                    className="w-full max-w-[110px] h-9 m-2 p-2 md:max-w-[180px] md:h-10 md:p-2 md:m-3 rounded-md text-black  bg-gray-500 text-base bg-opacity-50 border border-white focus:outline-none focus:ring-2 focus:ring-white">
 
                 <select name="location" id="location"
-                    class="w-full max-w-[110px] h-9 m-2 p-2 md:max-w-[180px] md:h-10 md:p-2 md:m-3 rounded-md text-white bg-black text-base bg-opacity-50 border border-white focus:outline-none focus:ring-2 focus:ring-white">
-                    <option class="bg-black text-white" value="Select location">Select location</option>
-                    <option class="bg-black text-white" value="Four Square">Four Square</option>
-                    <option class="bg-black text-white" value="Basketball Court">Basketball Court</option>
-                    <option class="bg-black text-white" value="Parking">Parking</option>
-                    <option class="bg-black text-white" value="Front Gate">Front Gate</option>
-                    <option class="bg-black text-white" value="Main Ground">Main Ground</option>
-                    <option class="bg-black text-white" value="C-Building">C-Building</option>
-                    <option class="bg-black text-white" value="B-Building">B-Building</option>
-                    <option class="bg-black text-white" value="A-Building">A-Building</option>
+                    className="w-full max-w-[110px] h-9 m-2 p-2 md:max-w-[180px] md:h-10 md:p-2 md:m-3 rounded-md text-white bg-black text-base bg-opacity-50 border border-white focus:outline-none focus:ring-2 focus:ring-white">
+                    <option className="bg-black text-white" value="Select location">Select location</option>
+                    <option className="bg-black text-white" value="Four Square">Four Square</option>
+                    <option className="bg-black text-white" value="Basketball Court">Basketball Court</option>
+                    <option className="bg-black text-white" value="Parking">Parking</option>
+                    <option className="bg-black text-white" value="Front Gate">Front Gate</option>
+                    <option className="bg-black text-white" value="Main Ground">Main Ground</option>
+                    <option className="bg-black text-white" value="C-Building">C-Building</option>
+                    <option className="bg-black text-white" value="B-Building">B-Building</option>
+                    <option className="bg-black text-white" value="A-Building">A-Building</option>
                 </select>
 
                 <button type="submit"
-                    class="flex items-center gap-1 px-3 py-2 m-2 rounded-md bg-white text-black text-sm md:text-base font-medium border border-black hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-black transition">
-                    <svg class="w-4 h-4 md:w-5 md:h-5" fill="currentColor" viewBox="0 0 20 20">
+                    className="flex items-center gap-1 px-3 py-2 m-2 rounded-md bg-white text-black text-sm md:text-base font-medium border border-black hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-black transition">
+                    <svg className="w-4 h-4 md:w-5 md:h-5" fill="currentColor" viewBox="0 0 20 20">
                         <path fill-rule="evenodd"
                             d="M12.9 14.32a8 8 0 111.414-1.414l4.387 4.387a1 1 0 01-1.414 1.414l-4.387-4.387zM8 14a6 6 0 100-12 6 6 0 000 12z"
                             clip-rule="evenodd" />
                     </svg>
-                    <span class="hidden sm:inline">Search</span>
+                    <span className="hidden sm:inline">Search</span>
                 </button>
 
             </div>
@@ -112,142 +108,142 @@
 
 
 
-    <section class="w-full h-auto flex flex-wrap flex-col md:flex md:flex-row">
+    <section className="w-full h-auto flex flex-wrap flex-col md:flex md:flex-row">
         <div
-            class=" w-full h-auto flex flex-col justify-center items-center text-center flex-wrap gap-2 mx-4 p-2 md:flex md:flex-row md:p-2 md:m-4 ">
+            className=" w-full h-auto flex flex-col justify-center items-center text-center flex-wrap gap-2 mx-4 p-2 md:flex md:flex-row md:p-2 md:m-4 ">
             <button
-                class="w-[250px] h-auto m-4 p-1 text-base text-center bg-white text-black rounded-full font-semibold  hover:border border-white hover:bg-black hover:text-white md:p-2 md:m-4 md:w-[200px] md:h-11 md:text-xl">Post
+                className="w-[250px] h-auto m-4 p-1 text-base text-center bg-white text-black rounded-full font-semibold  hover:border border-white hover:bg-black hover:text-white md:p-2 md:m-4 md:w-[200px] md:h-11 md:text-xl">Post
                 Items</button>
             <button
-                class="w-[250px] h-auto m-4 p-1 text-base text-center bg-white text-black rounded-full font-semibold  hover:border border-white hover:bg-black hover:text-white md:p-2 md:m-4 md:w-[200px] md:h-11 md:text-xl">Find
+                className="w-[250px] h-auto m-4 p-1 text-base text-center bg-white text-black rounded-full font-semibold  hover:border border-white hover:bg-black hover:text-white md:p-2 md:m-4 md:w-[200px] md:h-11 md:text-xl">Find
                 Items</button>
         </div>
     </section>
 
-    <main class="w-full h-auto flex flex-wrap flex-col md:flex md:flex-row">
+    <main className="w-full h-auto flex flex-wrap flex-col md:flex md:flex-row">
         <div
-            class="w-full h-auto flex text-xl justify-start items-center m-4 p-2 text-white font-poppins font-semibold md:text-3xl ">
+            className="w-full h-auto flex text-xl justify-start items-center m-4 p-2 text-white font-poppins font-semibold md:text-3xl ">
             <p>Latest found items.</p>
         </div>
         <!-- ==1== -->
-        <div class="w-full h-auto grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-4 justify-items-center">
+        <div className="w-full h-auto grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-4 justify-items-center">
             <div
-                class="w-full h-30  m-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white  md:w-[350px] md:h-50 md:m-4 object-cover">
-                <img src="./image/card1.jpg" alt="" class="w-full h-[200px] object-cover rounded-t-xl">
-                <div class="w-full h-auto m-2 p-1 flex flex-wrap justify-start items-center ">
-                    <p class="text-base md:text-lg">Category :</p>
-                    <p class="text-base md:text-lg">Electronic Devices</p>
+                className="w-full h-30  m-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white  md:w-[350px] md:h-50 md:m-4 object-cover">
+                <img src="./image/card1.jpg" alt="" className="w-full h-[200px] object-cover rounded-t-xl">
+                <div className="w-full h-auto m-2 p-1 flex flex-wrap justify-start items-center ">
+                    <p className="text-base md:text-lg">Category :</p>
+                    <p className="text-base md:text-lg">Electronic Devices</p>
                 </div>
 
-                <div class=" w-full h-auto flex flex-wrap justify-between items-center gap-2">
-                    <div class="m-2 p-1 flex flex-wrap gap-1 ">
+                <div className=" w-full h-auto flex flex-wrap justify-between items-center gap-2">
+                    <div className="m-2 p-1 flex flex-wrap gap-1 ">
                         <p>Location:</p>
-                        <p class="text-red-600 font-semibold">A-Building</p>
+                        <p className="text-red-600 font-semibold">A-Building</p>
 
                     </div>
 
                     <button
-                        class="w-[100px] h-9 rounded-lg bg-green-600 border border-black m-2 md:w-[100px] md:h-9 hover:bg-transparent hover:border hover:border-white">Claim</button>
+                        className="w-[100px] h-9 rounded-lg bg-green-600 border border-black m-2 md:w-[100px] md:h-9 hover:bg-transparent hover:border hover:border-white">Claim</button>
                 </div>
             </div>
             <!-- ==2== -->
             <div
-                class="w-full h-30 m-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white  md:w-[350px] md:h-50 md:m-4 object-cover">
-                <img src="./image/card2.jpg" alt="" class="w-full h-[200px] object-cover rounded-t-xl">
-                <div class="w-full h-auto m-2 p-1 flex flex-wrap justify-start items-center">
-                    <p class="text-base md:text-lg">Category :</p>
-                    <p class="text-base md:text-lg">BagPack</p>
+                className="w-full h-30 m-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white  md:w-[350px] md:h-50 md:m-4 object-cover">
+                <img src="./image/card2.jpg" alt="" className="w-full h-[200px] object-cover rounded-t-xl">
+                <div className="w-full h-auto m-2 p-1 flex flex-wrap justify-start items-center">
+                    <p className="text-base md:text-lg">Category :</p>
+                    <p className="text-base md:text-lg">BagPack</p>
                 </div>
 
-                <div class="w-full h-auto flex flex-wrap justify-between items-center gap-2">
-                    <div class="m-2 p-1 flex flex-wrap gap-1">
+                <div className="w-full h-auto flex flex-wrap justify-between items-center gap-2">
+                    <div className="m-2 p-1 flex flex-wrap gap-1">
                         <p>Location:</p>
-                        <p class="text-red-600 font-semibold">C-Building</p>
+                        <p className="text-red-600 font-semibold">C-Building</p>
 
                     </div>
 
                     <button
-                        class="w-[100px] h-9 rounded-lg bg-green-600 border border-black m-2 md:w-[100px] md:h-9 hover:bg-transparent hover:border hover:border-white">Claim</button>
+                        className="w-[100px] h-9 rounded-lg bg-green-600 border border-black m-2 md:w-[100px] md:h-9 hover:bg-transparent hover:border hover:border-white">Claim</button>
                 </div>
             </div>
             <!-- ==3== -->
             <div
-                class="w-full h-30  m-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white  md:w-[350px] md:h-50 md:m-4  object-cover">
-                <img src="./image/card3.jpg" alt="" class="w-full h-[200px] object-cover rounded-t-xl">
-                <div class="w-full h-auto m-2 p-1 flex flex-wrap justify-start items-center">
-                    <p class="text-base md:text-lg">Category :</p>
-                    <p class="text-base md:text-lg">Electronic Devices</p>
+                className="w-full h-30  m-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white  md:w-[350px] md:h-50 md:m-4  object-cover">
+                <img src="./image/card3.jpg" alt="" className="w-full h-[200px] object-cover rounded-t-xl">
+                <div className="w-full h-auto m-2 p-1 flex flex-wrap justify-start items-center">
+                    <p className="text-base md:text-lg">Category :</p>
+                    <p className="text-base md:text-lg">Electronic Devices</p>
                 </div>
 
-                <div class="w-full h-auto flex flex-wrap justify-between items-center gap-2">
-                    <div class="m-2 p-1 flex flex-wrap gap-1">
+                <div className="w-full h-auto flex flex-wrap justify-between items-center gap-2">
+                    <div className="m-2 p-1 flex flex-wrap gap-1">
                         <p>Location:</p>
-                        <p class="text-red-600 font-semibold">A-Building</p>
+                        <p className="text-red-600 font-semibold">A-Building</p>
 
                     </div>
 
                     <button
-                        class="w-[100px] h-9 rounded-lg bg-green-600 border border-black m-2 md:w-[100px] md:h-9 hover:bg-transparent hover:border hover:border-white">Claim</button>
+                        className="w-[100px] h-9 rounded-lg bg-green-600 border border-black m-2 md:w-[100px] md:h-9 hover:bg-transparent hover:border hover:border-white">Claim</button>
                 </div>
             </div>
             <!-- ==4== -->
             <div
-                class="w-full h-30  m-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white  md:w-[350px] md:h-50 md:m-4 object-cover">
-                <img src="./image/card5.jpg" alt="" class="w-full h-[200px] object-cover rounded-t-xl">
-                <div class="w-full h-auto m-2 p-1 flex flex-wrap justify-start items-center">
-                    <p class="text-base md:text-lg">Category :</p>
-                    <p class="text-base md:text-lg">Identity Card</p>
+                className="w-full h-30  m-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white  md:w-[350px] md:h-50 md:m-4 object-cover">
+                <img src="./image/card5.jpg" alt="" className="w-full h-[200px] object-cover rounded-t-xl">
+                <div className="w-full h-auto m-2 p-1 flex flex-wrap justify-start items-center">
+                    <p className="text-base md:text-lg">Category :</p>
+                    <p className="text-base md:text-lg">Identity Card</p>
                 </div>
 
-                <div class="w-full h-auto flex flex-wrap justify-between items-center gap-2">
-                    <div class="m-2 p-1 flex flex-wrap gap-1">
+                <div className="w-full h-auto flex flex-wrap justify-between items-center gap-2">
+                    <div className="m-2 p-1 flex flex-wrap gap-1">
                         <p>Location:</p>
-                        <p class="text-red-600 font-semibold">Parking</p>
+                        <p className="text-red-600 font-semibold">Parking</p>
 
                     </div>
 
                     <button
-                        class="w-[100px] h-9 rounded-lg bg-green-600 border border-black m-2 md:w-[100px] md:h-9 hover:bg-transparent hover:border hover:border-white">Claim</button>
+                        className="w-[100px] h-9 rounded-lg bg-green-600 border border-black m-2 md:w-[100px] md:h-9 hover:bg-transparent hover:border hover:border-white">Claim</button>
                 </div>
             </div>
             <!-- ==5== -->
             <div
-                class="w-full h-30  m-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white md:w-[350px] md:h-50 md:m-4   object-cover">
-                <img src="./image/card4.jpg" alt="" class="w-full h-[200px] object-cover rounded-t-xl">
-                <div class="w-full h-auto m-2 p-1 flex flex-wrap justify-start items-center">
-                    <p class="text-base md:text-lg">Category :</p>
-                    <p class="text-base md:text-lg">Keys</p>
+                className="w-full h-30  m-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white md:w-[350px] md:h-50 md:m-4   object-cover">
+                <img src="./image/card4.jpg" alt="" className="w-full h-[200px] object-cover rounded-t-xl">
+                <div className="w-full h-auto m-2 p-1 flex flex-wrap justify-start items-center">
+                    <p className="text-base md:text-lg">Category :</p>
+                    <p className="text-base md:text-lg">Keys</p>
                 </div>
 
-                <div class="w-full h-auto flex flex-wrap justify-between items-center gap-2">
-                    <div class="m-2 p-1 flex flex-wrap gap-1">
+                <div className="w-full h-auto flex flex-wrap justify-between items-center gap-2">
+                    <div className="m-2 p-1 flex flex-wrap gap-1">
                         <p>Location:</p>
-                        <p class="text-red-600 font-semibold">Parking</p>
+                        <p className="text-red-600 font-semibold">Parking</p>
 
                     </div>
 
                     <button
-                        class="w-[100px] h-9 rounded-lg bg-green-600 border border-black m-2 md:w-[100px] md:h-9 hover:bg-transparent hover:border hover:border-white">Claim</button>
+                        className="w-[100px] h-9 rounded-lg bg-green-600 border border-black m-2 md:w-[100px] md:h-9 hover:bg-transparent hover:border hover:border-white">Claim</button>
                 </div>
             </div>
             <!-- ==6== -->
             <div
-                class="w-full h-30  m-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white  md:w-[350px] md:h-50 md:m-4  object-cover">
-                <img src="./image/card6.jpg" alt="" class="w-full h-[200px] object-cover rounded-t-xl">
-                <div class="w-full h-auto m-2 p-1 flex flex-wrap justify-start items-center">
-                    <p class="text-base md:text-lg">Category :</p>
-                    <p class="text-base md:text-lg">garments</p>
+                className="w-full h-30  m-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white  md:w-[350px] md:h-50 md:m-4  object-cover">
+                <img src="./image/card6.jpg" alt="" className="w-full h-[200px] object-cover rounded-t-xl">
+                <div className="w-full h-auto m-2 p-1 flex flex-wrap justify-start items-center">
+                    <p className="text-base md:text-lg">Category :</p>
+                    <p className="text-base md:text-lg">garments</p>
                 </div>
 
-                <div class="w-full h-auto flex flex-wrap justify-between items-center gap-2">
-                    <div class="m-2 p-1 flex flex-wrap gap-1">
+                <div className="w-full h-auto flex flex-wrap justify-between items-center gap-2">
+                    <div className="m-2 p-1 flex flex-wrap gap-1">
                         <p>Location:</p>
-                        <p class="text-red-600 font-semibold">Four Square</p>
+                        <p className="text-red-600 font-semibold">Four Square</p>
 
                     </div>
 
                     <button
-                        class="w-[100px] h-9 rounded-lg bg-green-600 border border-black m-2 md:w-[100px] md:h-9 hover:bg-transparent hover:border hover:border-white">Claim</button>
+                        className="w-[100px] h-9 rounded-lg bg-green-600 border border-black m-2 md:w-[100px] md:h-9 hover:bg-transparent hover:border hover:border-white">Claim</button>
                 </div>
             </div>
 
@@ -256,23 +252,22 @@
 
     <!-- Main Ends Here -->
 
-    <footer class="mt-16 border-t border-white/10 bg-black/20 backdrop-blur-md">
-        <div class="max-w-6xl mx-auto px-4 py-10 md:py-12 text-gray-300">
+    <footer className="mt-16 border-t border-white/10 bg-black/20 backdrop-blur-md">
+        <div className="max-w-6xl mx-auto px-4 py-10 md:py-12 text-gray-300">
             <!-- Top section -->
-            <div class="grid gap-8 md:grid-cols-4">
+            <div className="grid gap-8 md:grid-cols-4">
                 <!-- Branding -->
-                <div class="md:col-span-1 space-y-3">
-                    <div class="flex items-center gap-3">
+                <div className="md:col-span-1 space-y-3">
+                    <div className="flex items-center gap-3">
                         <!-- Logo -->
-                        <div> 
-                            <img src="./image/backtoownerlogo.png"
-     alt="BacktoOwner Logo"
-     class="w-[30px] h-[30px] md:w-[55px] md:h-[55px] rounded-full object-cover border border-gray-300 shadow-sm hover:scale-105 transition-transform duration-200 ease-in-out" />
+                        <div>
+                            <img src="./image/backtoownerlogo.png" alt="BacktoOwner Logo"
+                                className="w-[30px] h-[30px] md:w-[55px] md:h-[55px] rounded-full object-cover border border-gray-300 shadow-sm hover:scale-105 transition-transform duration-200 ease-in-out" />
 
                         </div>
                         <div>
-                            <h2 class="text-lg font-semibold">BacktoOwner</h2>
-                            <p class="text-xs text-gray-400">
+                            <h2 className="text-lg font-semibold">BacktoOwner</h2>
+                            <p className="text-xs text-gray-400">
                                 Lost & found platform to reconnect people with their belongings.
                             </p>
                         </div>
@@ -281,56 +276,58 @@
 
                 <!-- Product links -->
                 <div>
-                    <h3 class="text-sm font-semibold mb-3">Product</h3>
-                    <ul class="space-y-2 text-sm text-gray-400">
-                        <li><a href="#" class="hover:text-white hover:underline underline-offset-4">Home</a></li>
-                        <li><a href="#" class="hover:text-white hover:underline underline-offset-4">Browse Items</a>
+                    <h3 className="text-sm font-semibold mb-3">Product</h3>
+                    <ul className="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" className="hover:text-white hover:underline underline-offset-4">Home</a></li>
+                        <li><a href="#" className="hover:text-white hover:underline underline-offset-4">Browse Items</a>
                         </li>
-                        <li><a href="#" class="hover:text-white hover:underline underline-offset-4">Report Lost Item</a>
+                        <li><a href="#" className="hover:text-white hover:underline underline-offset-4">Report Lost Item</a>
                         </li>
-                        <li><a href="#" class="hover:text-white hover:underline underline-offset-4">FAQ</a></li>
+                        <li><a href="#" className="hover:text-white hover:underline underline-offset-4">FAQ</a></li>
                     </ul>
                 </div>
 
                 <!-- Support links -->
                 <div>
-                    <h3 class="text-sm font-semibold mb-3">Support</h3>
-                    <ul class="space-y-2 text-sm text-gray-400">
-                        <li><a href="#" class="hover:text-white hover:underline underline-offset-4">Contact Us</a></li>
-                        <li><a href="#" class="hover:text-white hover:underline underline-offset-4">Report an Issue</a>
+                    <h3 className="text-sm font-semibold mb-3">Support</h3>
+                    <ul className="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" className="hover:text-white hover:underline underline-offset-4">Contact Us</a></li>
+                        <li><a href="#" className="hover:text-white hover:underline underline-offset-4">Report an Issue</a>
                         </li>
-                        <li><a href="#" class="hover:text-white hover:underline underline-offset-4">Feedback</a></li>
+                        <li><a href="#" className="hover:text-white hover:underline underline-offset-4">Feedback</a></li>
                     </ul>
                 </div>
 
                 <!-- Contact / Social -->
-                <div class="space-y-3">
-                    <h3 class="text-sm font-semibold mb-1">Stay connected</h3>
-                    <p class="text-sm text-gray-400">
+                <div className="space-y-3">
+                    <h3 className="text-sm font-semibold mb-1">Stay connected</h3>
+                    <p className="text-sm text-gray-400">
                         Have a suggestion or found a bug? Reach out anytime.
                     </p>
-                    <p class="text-sm">
+                    <p className="text-sm">
                         Email:
-                        <a href="mailto:raundalerutik@example.com" class="text-gray-200 hover:text-white hover:underline">
-                                raundalerutik@example.com
+                        <a href="mailto:raundalerutik@example.com"
+                            className="text-gray-200 hover:text-white hover:underline">
+                            raundalerutik@example.com
                         </a>
                     </p>
-                    <div class="flex gap-4 text-sm text-gray-400">
-                        <a href="https://github.com/rutikraundale" class="hover:text-white">GitHub</a>
-                        <a href="https://www.linkedin.com/in/rutik-raundale-348136289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="hover:text-white">LinkedIn</a>
-                        <a href="#" class="hover:text-white">Instagram</a>
+                    <div className="flex gap-4 text-sm text-gray-400">
+                        <a href="https://github.com/rutikraundale" className="hover:text-white">GitHub</a>
+                        <a href="https://www.linkedin.com/in/rutik-raundale-348136289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            className="hover:text-white">LinkedIn</a>
+                        <a href="#" className="hover:text-white">Instagram</a>
                     </div>
                 </div>
             </div>
 
             <!-- Bottom section -->
-            <div class="mt-8 flex flex-col md:flex-row items-center justify-between gap-3 border-t border-white/5 pt-4">
-                <p class="text-xs text-gray-500">
+            <div className="mt-8 flex flex-col md:flex-row items-center justify-between gap-3 border-t border-white/5 pt-4">
+                <p className="text-xs text-gray-500">
                     © 2025 BacktoOwner. All rights reserved.
                 </p>
-                <div class="flex gap-4 text-xs text-gray-500">
-                    <a href="#" class="hover:text-gray-300">Privacy Policy</a>
-                    <a href="#" class="hover:text-gray-300">Terms of Use</a>
+                <div className="flex gap-4 text-xs text-gray-500">
+                    <a href="#" className="hover:text-gray-300">Privacy Policy</a>
+                    <a href="#" className="hover:text-gray-300">Terms of Use</a>
                 </div>
             </div>
         </div>

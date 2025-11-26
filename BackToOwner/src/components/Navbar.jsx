@@ -1,31 +1,96 @@
 import React from 'react'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 const Navbar = () => {
     const [isMenu, setIsmenu] = useState(false)
 
     return (
         <div className='h-auto w-full m-3 p-3 flex justify-between items-center'>
-            <div className="flex justify-center items-center m-2 p-2">
-                    <img className='w-20 h-20 rounded-full object-cover md:w-[100px] md:h-[100px]' src="public/image/backtoownerlogo.png" alt="" />
-                    <p class="text-white font-poppins text-xl font-bold m-2 p-2 md:text-3xl ">BackToOwner</p>
+
+            <div className='flex w-full h-50 bg-transparent '>
+                <div className='flex justify-center items-center m-2 p-2'>
+                    <img className='w-20 h-20 rounded-full object-cover md:w-[100px] md:h-[100px]' src="/image/backtoownerlogo.png" alt="" />
+                    <p className="text-white font-poppins text-xl font-bold m-2 p-2 md:text-3xl ">BackToOwner</p>
+                </div>
+
+                <div className='hidden md:flex w-full justify-between items-center ' >
+                    <div className='flex w-full justify-center items-center md:m-4 md:p-2'>
+                        <ul className="md:flex hidden font-semibold gap-2">
+                            <li>
+                                <Link className='mx-3.5 text-white font-poppins cursor-pointer text-[19px] hover:underline underline-offset-4' to={'/'}>
+                                    Home
+                                </Link>
+
+                            </li>
+                            <li>
+                                <Link className='mx-3.5 text-white font-poppins cursor-pointer text-[19px] hover:underline underline-offset-4' to={'/browse'}>
+                                    Browse Items
+                                </Link>
+                            </li>
+                            <li>
+                                <Link className='mx-3.5 text-white font-poppins cursor-pointer text-[19px] hover:underline underline-offset-4' to={'/about'}>
+                                    About us
+                                </Link>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div className=" flex w-auto h-auto m-2 p-2 justify-center items-center md:m-4 md:p-2 gap-4">
+                        <a className="flex items-center justify-center mx-3.5 text-white text-[19px] font-poppins cursor-pointer  w-[100px] h-11 font-semibold m-2 p-2 hover:border border-white rounded-md"
+                            href="#">Sign in</a>
+                        <a className="flex items-center justify-center mx-3.5 text-[19px] text-white font-poppins cursor-pointer  w-[100px] h-11 font-semibold m-2 p-2 hover:border border-white rounded-md"
+                            href="#">Sign up</a>
+                    </div>
+
+                </div>
+
             </div>
-            <ul class="md:flex hidden font-semibold gap-2">
-                <li
-                    class="mx-3.5 text-white font-poppins cursor-pointer text-[19px] hover:underline underline-offset-4">
-                    Home</li>
-                <li
-                    class="mx-3.5 text-white font-poppins cursor-pointer text-[19px] hover:underline underline-offset-4">
-                    Browse Items</li>
-                <li
-                    class="mx-[3.5 text-white font-poppins cursor-pointer text-[19px] hover:underline underline-offset-4">
-                    About us</li>
-            </ul>
-            <div class=" hidden md:flex  items-center gap-2">
-                <a class="mx-3.5 text-white text-[19px] font-poppins cursor-pointer font-semibold m-2 p-2 hover:border border-white rounded-md e-28 block md:w-auto"
-                    href="#">Sign in</a>
-                <a class="mx-3.5 text-[19px] text-white font-poppins cursor-pointer font-semibold m-2 p-2 hover:border border-white rounded-md w-25 block md:w-auto "
-                    href="#">Sign up</a>
+
+
+
+
+            <div className='md:hidden flex justify-center items-center m-4 px-4 py-2'>
+                <i onClick={() => {
+                    setIsmenu(!isMenu)
+                }} className=" text-white bg-black text-3xl  ri-menu-line cursor-pointer"></i>
             </div>
+            {isMenu && (
+                <div className='flex flex-col w-1/2 h-screen absolute right-0 top-0 bg-black backdrop-blur-2xl text-white'>
+                    <div className='flex m-2 p-2 '><i onClick={() => {
+                        setIsmenu(false)
+                    }}
+                        className="flex justify-center items-center border-2 border-white rounded w-[100px] h-12 text-white text-3xl m-4 px-3 py-4 ri-arrow-right-long-line"></i></div>
+                    <div className='flex w-full flex-col  h-auto justify-center items-center'>
+                        <ul className="flex flex-col gap-6">
+                            <li >
+                                <Link className='text-white text-2xl font-semibold cursor-pointer hover:underline' to={'/'}>
+                                    Home
+                                </Link>
+                            </li>
+                            <hr />
+                            <li >
+                                <Link className='text-white text-2xl font-semibold cursor-pointer hover:underline' to={'/browse'}>
+                                    Browse Items
+                                </Link>
+                            </li>
+                            <hr />
+                            <li >
+                                <Link className='text-white text-2xl font-semibold cursor-pointer hover:underline' to={'/about'}>
+                                    About us
+                                </Link>
+                            </li>
+                            <hr />
+
+                        </ul>
+                    </div>
+                    <div className=" flex w-full h-auto m-2 p-2 justify-center items-center md:m-4 md:p-2 gap-4">
+                        <a className="flex items-center justify-center mx-2.5 bg-white text-black text-[14px] font-poppins cursor-pointer  w-auto h-11 font-semibold m-2 p-2 hover:border border-white rounded-md"
+                            href="#">Sign in</a>
+                        <a className="flex items-center justify-center mx-2.5 bg-white text-black text-[14px]  font-poppins cursor-pointer  w-auto h-11 font-semibold m-2 p-2 hover:border border-white rounded-md"
+                            href="#">Sign up</a>
+                    </div>
+                </div>
+            )}
         </div>
     )
 }
