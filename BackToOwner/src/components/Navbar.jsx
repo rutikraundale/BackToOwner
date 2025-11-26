@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <div className='h-auto w-full m-3 p-3 flex justify-between items-center'>
 
-            <div className='flex w-full h-50 bg-transparent '>
+            
                 <div className='flex justify-center items-center m-2 p-2'>
                     <img className='w-20 h-20 rounded-full object-cover md:w-[100px] md:h-[100px]' src="/image/backtoownerlogo.png" alt="" />
                     <p className="text-white font-poppins text-xl font-bold m-2 p-2 md:text-3xl ">BackToOwner</p>
@@ -36,15 +36,18 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className=" flex w-auto h-auto m-2 p-2 justify-center items-center md:m-4 md:p-2 gap-4">
-                        <a className="flex items-center justify-center mx-3.5 text-white text-[19px] font-poppins cursor-pointer  w-[100px] h-11 font-semibold m-2 p-2 hover:border border-white rounded-md"
-                            href="#">Sign in</a>
-                        <a className="flex items-center justify-center mx-3.5 text-[19px] text-white font-poppins cursor-pointer  w-[100px] h-11 font-semibold m-2 p-2 hover:border border-white rounded-md"
-                            href="#">Sign up</a>
+                        <Link className='flex items-center justify-center mx-3.5 text-white text-[19px] font-poppins cursor-pointer  w-[100px] h-11 font-semibold m-2 p-2 hover:border border-white rounded-md' to={'/signin'}>
+                            Sign in
+                        </Link>
+                        <Link className='flex items-center justify-center mx-3.5 text-[19px] text-white font-poppins cursor-pointer  w-[100px] h-11 font-semibold m-2 p-2 hover:border border-white rounded-md' to={'/signup'}>
+                            Sign in
+                        </Link>
+                        
                     </div>
 
                 </div>
 
-            </div>
+            
 
 
 
@@ -84,10 +87,13 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className=" flex w-full h-auto m-2 p-2 justify-center items-center md:m-4 md:p-2 gap-4">
-                        <a className="flex items-center justify-center mx-2.5 bg-white text-black text-[14px] font-poppins cursor-pointer  w-auto h-11 font-semibold m-2 p-2 hover:border border-white rounded-md"
-                            href="#">Sign in</a>
-                        <a className="flex items-center justify-center mx-2.5 bg-white text-black text-[14px]  font-poppins cursor-pointer  w-auto h-11 font-semibold m-2 p-2 hover:border border-white rounded-md"
-                            href="#">Sign up</a>
+                        <Link className='flex items-center justify-center mx-2.5 bg-white text-black text-[14px] font-poppins cursor-pointer  w-auto h-11 font-semibold m-2 p-2 hover:border border-white rounded-md' to={'/signin'}>
+                            Sign in
+                        </Link>
+                        <Link className='flex items-center justify-center mx-2.5 bg-white text-black text-[14px] font-poppins cursor-pointer  w-auto h-11 font-semibold m-2 p-2 hover:border border-white rounded-md' to={'/signup'}>
+                            Sign up
+                        </Link>
+
                     </div>
                 </div>
             )}
