@@ -1,6 +1,12 @@
+import { Link, useNavigate } from "react-router-dom";
+
 // Reusable Card Component
+
+
 const FoundItemCard = ({ img, category, location }) => (
-  <div className="w-full md:w-[350px] m-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white">
+  
+
+  <div className="w-80 md:w-[350px] m-4 rounded-lg flex flex-col shadow-md bg-gray-800 text-white">
     <img src={img} alt={category} className="w-full h-[200px] object-cover rounded-t-xl" />
     
     <div className="m-2 p-1 flex flex-wrap items-center">
@@ -33,13 +39,21 @@ const items = [
 
 // Main Section
 export default function FoundItems() {
+  const navigate=useNavigate();
+  const handleclick=()=>{
+        navigate('./itemdetails')
+  }
   return (
+    
+
     <main className="w-full h-auto flex flex-col md:flex-row flex-wrap">
       <div className="w-full flex text-xl gap-4 justify-start items-center m-4 p-2 text-white font-poppins font-semibold md:text-3xl overflow-auto">
         <p>Latest found items.</p>
       </div>
 
-      <div className="w-full grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-4 justify-items-center">
+      <div className="w-full grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-4 justify-items-center cursor-pointer" onClick={()=>{
+          handleclick()
+      }}>
         {items.map((item, idx) => (
           <FoundItemCard key={idx} {...item} />
         ))}

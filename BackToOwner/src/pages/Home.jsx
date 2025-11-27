@@ -3,8 +3,8 @@ import Itemscard from './Itemscard'
 
 const Home = () => {
   return (
-    <div className='flex flex-col w-full h-auto overflow-auto justify-center items-center gap-4'>
-      <h2 className='font-bold text-white text-2xl text-center italic'>Did You Find Something ? ..... </h2>
+    <div className='flex flex-col w-full h-auto overflow-auto justify-center items-center gap-4 mt-4 py-4'>
+      <h2 className='font-bold text-white text-xl text-center italic md:text-3xl'>Did You Find Something ? ..... </h2>
       <section className="w-full h-auto flex flex-wrap flex-col md:flex md:flex-row">
         <div
           className='w-full h-auto flex flex-col  justify-center items-center text-center flex-wrap gap-2 mx-4 p-2 md:flex md:flex-row md:p-2 md:m-4'>
